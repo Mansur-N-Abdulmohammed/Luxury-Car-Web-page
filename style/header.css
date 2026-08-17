@@ -24,7 +24,7 @@
       grid-column: 4/5;
       display: flex;
       gap: 0.2rem;
-      li {
+      li a {
         padding: 0.7rem 1.6rem;
       }
     }
@@ -68,4 +68,11 @@
     opacity: 0;
     pointer-events: none;
   }
+}
+
+.hero-section {
+  background-color: white;
+  background-image: var(--car-image);
+  background-size: cover;
+  background-position: center center;
 }

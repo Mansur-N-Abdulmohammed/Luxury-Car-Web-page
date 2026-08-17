@@ -3,9 +3,11 @@
   --secondary-color: #fff;
 
   --main-font: "Georama", sans-serif;
+  --car-image: url("../media/img/img-1.png");
 }
 
 [data-theme="light"] {
   --primary-color: #fff;
   --secondary-color: #000;
+  --car-image: url("../media/img/img-1-inverse.png");
 }
