@@ -1,0 +1,23 @@
+.x {
+  position: relative;
+}
+.x::after {
+  position: absolute;
+  width: 100%;
+  transform-origin: left;
+  /* height: 0.1rem; */
+  height: 1px;
+  left: 0;
+  bottom: -0.4rem;
+
+  content: "";
+  border-bottom: 2px solid white;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+.x:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}

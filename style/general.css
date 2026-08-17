@@ -1,0 +1,118 @@
+@import url(./variable.css);
+@import url(./mediaQ.css);
+@import url(./animation.css);
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+* button,
+* a:link,
+* a:visited {
+  color: var(--secondary-color);
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.btn {
+  padding: 0.5rem 1.7rem;
+  background-color: transparent;
+  outline: none;
+  border-radius: 1rem;
+  border: 0.15rem white solid;
+}
+
+::selection {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: var(--main-font);
+}
+
+.header {
+  .navbar-section {
+    font-size: 1.1rem;
+
+    height: 6rem;
+    display: grid;
+    grid-template-columns: minmax(2rem, 10rem) auto 1fr auto 1fr auto minmax(
+        2rem,
+        10rem
+      );
+
+    justify-items: center;
+    align-items: center;
+
+    .logo {
+      grid-column: 2/3;
+    }
+    .list {
+      grid-column: 4/5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .btn {
+      grid-column: 6/7;
+    }
+  }
+  .hero-section {
+    height: calc(100vh - 6rem);
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+
+  * {
+    padding: 4.8rem;
+    height: 100vh;
+    font-size: 2rem;
+  }
+}
+.fetured-section {
+  background-color: grey;
+}
+.videoShow-section {
+  background-color: slategray;
+}
+.services-section {
+  background-color: grey;
+}
+.details-section {
+  background-color: slategray;
+}
+.footer-section {
+  background-color: grey;
+}
+
+/* 
+--- 01 TYPOGRAPHY SYSTEM 
+
+ -FONTSIZE SYSTEM (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+--- 02 SPACING SYSTEM (px):
+/ 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/

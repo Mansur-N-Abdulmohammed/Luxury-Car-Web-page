@@ -1,0 +1,24 @@
+/* ================================
+   📱 PHONE
+   Default: 0–599px
+================================ */
+
+/* 📱 LARGE PHONE */
+@media (min-width: 600px) {
+}
+
+/* 📲 TABLET */
+@media (min-width: 768px) {
+}
+
+/* 💻 LAPTOP */
+@media (min-width: 1024px) {
+}
+
+/* 🖥️ DESKTOP */
+@media (min-width: 1280px) {
+}
+
+/* 🖥️ LARGE MONITOR */
+@media (min-width: 1536px) {
+}
