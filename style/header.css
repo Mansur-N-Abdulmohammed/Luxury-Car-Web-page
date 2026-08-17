@@ -85,14 +85,12 @@
 
   .hero {
     max-width: 120rem;
-    /* background-color: rgb(73, 73, 47); */
     padding: 15rem 0;
     margin: 0 auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
 
     .primary-heading {
       font-size: 7rem;
@@ -100,10 +98,15 @@
       font-family: var(--special-font);
       /* font-family: var(--special-font); */
       text-transform: uppercase;
+      margin-bottom: 1rem;
     }
     .hero-description {
+      font-size: 1.4rem;
+      max-width: 50rem;
+      margin-bottom: 2rem;
     }
     .hero-link {
+      /* font-size: 1.4rem; */
     }
   }
 }
