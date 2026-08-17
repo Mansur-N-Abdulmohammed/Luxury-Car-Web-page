@@ -2,5 +2,10 @@
   --primary-color: #000;
   --secondary-color: #fff;
 
-  --main-font: "Poppins", sans-serif;
+  --main-font: "Georama", sans-serif;
+}
+
+[data-theme="light"] {
+  --primary-color: #fff;
+  --secondary-color: #000;
 }

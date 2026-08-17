@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="HTML" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -13,7 +13,10 @@
   <link rel="stylesheet" href="../style/main-section.css">
   <link rel="stylesheet" href="../style/stories-section.css">
   <link rel="stylesheet" href="../style/footer.css"> -->
+  <link rel="stylesheet" href="./style/variable.css">
   <link rel="stylesheet" href="./style/general.css">
+  <link rel="stylesheet" href="./style/animation.css">
+  <link rel="stylesheet" href="./style/header.css">
 
 
 
@@ -26,7 +29,8 @@
   <!-- -------------------GOOGLE FONTS----------------- -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
 
   <!-- -------------------ICON----------------- -->
@@ -41,7 +45,6 @@
   <link rel="apple-touch-icon" sizes="152x152" href="./media/img/image.png">
   <link rel="apple-touch-icon" sizes="120x120" href="./media/img/image.png">
 
-  <link rel="stylesheet" href="../media/icon/linea_basic_1.0/_ICONFONT/styles.css">
   <!-- -------------------SCRIPTS----------------- -->
 
   <script defer type="module" src="script.js"></script>
@@ -49,18 +52,39 @@
   <title>Document</title>
 </head>
 
+<!-- data-theme="light" -->
+
 <body>
   <header class="header">
     <nav class="navbar-section">
-      <div class="logo">luxuryDetails</div>
+      <a href="#" class="logo">luxuryDetails</a>
 
-      <ul class="list">
-        <li><a href="#" class="x">services</a></li>
-        <li><a href="#" class="x">pricing</a></li>
-        <li><a href="#" class="x">about</a></li>
-        <li><a href="#" class="x">contact</a></li>
+      <ul class="list" data-theme="dark">
+        <li class="x"><a href="#">services</a></li>
+        <li class="x"><a href="#">pricing</a></li>
+        <li class="x"><a href="#">about</a></li>
+        <li class="x"><a href="#">contact</a></li>
       </ul>
       <button class="btn">get a quote</button>
+      <div class="dark-light-container">
+        <span class="light-icon btn-icon hide-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <g fill="none" stroke="currentColor">
+              <path d="M12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4s4 1.794 4 4s-1.794 4-4 4Z" />
+              <path stroke-linecap="round"
+                d="M12 3.5v2m8.5 6.5h-2m-13 0h-2m8.5 6.5v2m4.5-13L18 6M6 18l1.5-1.5M6 6l1.5 1.5m9 9L18 18" />
+            </g>
+          </svg>
+        </span>
+        <span class="dark-icon btn-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+            <path d="M0 0h256v256H0z" fill="none" />
+            <path fill="currentColor"
+              d="M230.72 145.06a4 4 0 0 0-4-1A92.08 92.08 0 0 1 111.94 29.27a4 4 0 0 0-5-5a100.78 100.78 0 0 0-50.86 35.61a100 100 0 0 0 140 140a100.78 100.78 0 0 0 35.59-50.87a4 4 0 0 0-.95-3.95m-39.42 48.47A92 92 0 0 1 62.47 64.7a93 93 0 0 1 39.88-30.35a100.09 100.09 0 0 0 119.3 119.3a93 93 0 0 1-30.35 39.88" />
+          </svg>
+        </span>
+      </div>
     </nav>
     <section class="hero-section">hero-section</section>
   </header>

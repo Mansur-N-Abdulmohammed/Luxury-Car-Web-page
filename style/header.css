@@ -1,0 +1,71 @@
+.header {
+  .navbar-section {
+    font-size: 1.1rem;
+    border-bottom: 0.1rem var(--secondary-color) solid;
+    height: 7rem;
+    display: grid;
+    grid-template-columns: minmax(2rem, 10rem) auto 1fr auto 1fr auto minmax(
+        2rem,
+        10rem
+      );
+
+    column-gap: 1rem;
+
+    justify-items: center;
+    align-items: center;
+
+    .logo {
+      grid-column: 2/3;
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+    .list {
+      grid-column: 4/5;
+      display: flex;
+      gap: 0.2rem;
+      li {
+        padding: 0.7rem 1.6rem;
+      }
+    }
+    .btn {
+      grid-column: 6/7;
+    }
+  }
+  .hero-section {
+    height: calc(100vh - 7rem);
+  }
+}
+
+.dark-light-container {
+  cursor: pointer;
+  color: var(--secondary-color);
+  /* border: 0.1rem var(--secondary-color) solid; */
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .btn-icon {
+    font-size: 3rem;
+    position: absolute;
+    translate: 0% 10%;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(0.9) rotate(-20deg);
+    }
+  }
+
+  .hide-icon {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
