@@ -4,6 +4,7 @@
 
   --main-font: "Georama", sans-serif;
   --car-image: url("../media/img/img-1.png");
+  --special-font: "Raleway", serif;
 }
 
 [data-theme="light"] {
