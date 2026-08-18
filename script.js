@@ -10,4 +10,7 @@ const darkLightMode = function (btn) {
 };
 
 darkLightMode(DLM_btn);
-alert("hacked");
+console.log(`hello`);
+console.log(`hello`);
+console.log(`hello`);
+console.log(`hello`);
