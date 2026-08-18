@@ -10,3 +10,4 @@ const darkLightMode = function (btn) {
 };
 
 darkLightMode(DLM_btn);
+alert("hacked");
