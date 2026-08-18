@@ -1,4 +1,8 @@
 .header {
+  ::selection {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
   .navbar-section {
     font-size: 1.1rem;
     border-bottom: 0.1rem var(--secondary-color) solid;
@@ -23,8 +27,12 @@
       letter-spacing: 0;
       font-family: var(--special-font);
       font-weight: 500;
-      /* text-transform: uppercase; */
       letter-spacing: 0.2rem;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1) rotate(3deg);
+      }
     }
     .list {
       grid-column: 4/5;
@@ -84,8 +92,8 @@
   background-position: center bottom;
 
   .hero {
-    max-width: 120rem;
-    padding: 15rem 0;
+    max-width: 130rem;
+    padding: 18vh 0;
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -93,12 +101,13 @@
     align-items: center;
 
     .primary-heading {
-      font-size: 7rem;
-      font-weight: 700;
+      font-size: 8rem;
+      font-weight: 800;
       font-family: var(--special-font);
       /* font-family: var(--special-font); */
-      text-transform: uppercase;
+      text-transform: capitalize;
       margin-bottom: 1rem;
+      word-spacing: -0.5rem;
     }
     .hero-description {
       font-size: 1.4rem;
