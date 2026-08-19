@@ -23,15 +23,14 @@
     .logo {
       grid-column: 2/3;
       font-size: 2rem;
-      font-weight: 800;
+      font-weight: 800 !important;
       letter-spacing: 0;
-      font-family: var(--special-font);
       font-weight: 500;
       letter-spacing: 0.2rem;
       transition: transform 0.3s ease;
 
       &:hover {
-        transform: scale(1.1) rotate(3deg);
+        transform: scale(0.95);
       }
     }
     .list {
@@ -102,9 +101,7 @@
 
     .primary-heading {
       font-size: 8rem;
-      font-weight: 800;
-      font-family: var(--special-font);
-      /* font-family: var(--special-font); */
+      font-weight: 200;
       text-transform: capitalize;
       margin-bottom: 1rem;
       word-spacing: -0.5rem;
